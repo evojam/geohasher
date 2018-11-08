@@ -1,0 +1,60 @@
+{
+  "name": "@evojam/geohasher",
+  "version": "1.0.0",
+  "description": "Geohash decoder",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "author": "Marcin Wadon <mwadon@evojam.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evojam/geohasher/issues"
+  },
+  "scripts": {
+    "jest": "jest --ci",
+    "jest-coverage": "jest --ci --coverage",
+    "test": "npm run jest",
+    "clean": "rimraf lib/*",
+    "build": "npm run clean && tsc",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evojam/geohasher.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.3",
+    "jest": "^23.6.0",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.10.4",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts}",
+      "!src/**/index.ts"
+    ],
+    "testRegex": "test",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 0
+      }
+    },
+    "preset": "ts-jest",
+    "testMatch": null
+  },
+  "dependencies": {
+    "fp-ts": "^1.10.0"
+  }
+}
