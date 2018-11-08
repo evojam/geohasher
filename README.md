@@ -1,6 +1,6 @@
 # @evojam/geohasher
 [![npm version](https://badge.fury.io/js/%40evojam%2Fgeohasher.svg)](https://badge.fury.io/js/%40evojam%2Fgeohasher)
-[![Build Status](https://travis-ci.org/evojam/geohasher.svg?branch=develop)](https://travis-ci.org/evojam/geohasher)
+[![Build Status](https://travis-ci.org/evojam/geohasher.svg?branch=master)](https://travis-ci.org/evojam/geohasher)
 
 ## Installing latest version
 
